@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- <script  defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6-G56cUB2BXIDAk77RSBGPMGIKSGFk3U&callback=initMap"
+    type="text/javascript"></script> -->
+  
+</head>
+<body>
+    <header>
+        <img src="./bg.png" alt="Weather App">
+        <input type="text" placeholder="Enter any city" id="mycity">
+        <button class="btn">Search</button>
+    </header>
+    <div id="map"></div>
+    <div id="box">
+        <div id="place" class="samestyle">Delhi</div>
+        <div id="weather">sunloght</div>
+        <div id="temp"><span>&#8451;</span></div>
+        <div class="samestyle"><span>Pressure - </span><span class="pressureContent"></span></div>
+        <div class="samestyle"><span>Humidity - </span><span class="humidityContent"></span></div>
+        <div class="samestyle"><span>Sunrise - </span><span class="sunriseContent"></span></div>
+        <div class="samestyle"><span>Sunset - </span><span class="sunsetContent"></span></div>
+    </div>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6-G56cUB2BXIDAk77RSBGPMGIKSGFk3U&callback=initMap&libraries=places">
+    </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6-G56cUB2BXIDAk77RSBGPMGIKSGFk3U&libraries=&v=weekly"
+    defer
+  ></script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
